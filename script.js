@@ -36,6 +36,11 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 
 const applicationForm = document.querySelector("#application-form");
 const formMessage = document.querySelector("#form-message");
+if (applicationForm && APPLICATION_EMAIL.trim()) {
+  applicationForm.querySelectorAll("input, select, textarea, button").forEach((control) => { control.disabled = false; });
+  applicationForm.querySelector("button[type=submit]").innerHTML = "Send application <span aria-hidden=\"true\">↗</span>";
+  formMessage.textContent = "";
+}
 applicationForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!APPLICATION_EMAIL) {
