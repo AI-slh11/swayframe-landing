@@ -203,6 +203,7 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.
 .consent input { accent-color: var(--lime); margin: 2px 0 0; }
 .submit-button { width: 100%; margin-top: 6px; }
 .form-privacy { font-size: 8px; color: #777987; line-height: 1.6; margin: 12px 0 0; }
+.form-privacy a { color: var(--lime); text-decoration: underline; text-underline-offset: 3px; }
 .form-message { font-size: 10px; color: var(--lime); min-height: 16px; margin-top: 10px; }
 .footer { min-height: 135px; display: grid; grid-template-columns: 1fr 1fr 2fr; align-items: center; color: #858693; }
 .footer .brand { color: var(--white); }
