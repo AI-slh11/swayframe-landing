@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 // Set this to the inbox that should receive applications before deploying.
 const APPLICATION_EMAIL = "";
 
@@ -41,7 +43,7 @@ applicationForm?.addEventListener("submit", (event) => {
     return;
   }
   const values = new FormData(applicationForm);
-  const subject = encodeURIComponent(`Swayframe trial application â€” ${values.get("company")}`);
+  const subject = encodeURIComponent(`Swayframe trial application — ${values.get("company")}`);
   const body = encodeURIComponent([
     `Name: ${values.get("name")}`,
     `Work email: ${values.get("email")}`,
